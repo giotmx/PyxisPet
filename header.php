@@ -2,10 +2,10 @@
 <html lang="zxx">
 <head>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" type="text/css"  href="css/all.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
