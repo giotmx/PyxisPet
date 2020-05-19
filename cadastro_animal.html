@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Cadastro de animais</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/nice-select.css">							
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bodycadastros">
+        <header id="header" id="home" class="header-scrolled">
+            <div class="container main-menu">
+                <div class="row align-items-center justify-content-between d-flex">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/logo.png" width=100% height=100% alt="" title="" /></a>
+                    </div>
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li class="menu-active"><a href="index.html">Página inicial</a></li>
+                            <li class="menu-has-children"><a href="">Encontre</a>
+                                <ul>
+                                    <li><a href="dogs.html">Cachorro</a></li>	
+                                    <li><a href="cats.html">Gato</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-has-children"><a href="">Participe</a>
+                                <ul>
+                                    <li><a href="volunteer.html">Seja voluntário</a></li>	
+                                    <li><a href="elements.html">Tenho interesse em um pet</a></li>
+                                </ul>
+                            </li>	
+                            <li><a href="about.html">Sobre nós</a></li>			          					          
+                            <li><a href="contact.html">Contato</a></li>				          			              
+                        </ul>
+                    </nav><!-- #nav-menu-container -->		    		
+                </div>
+            </div>
+        </header>
+        
+        <section style="padding-top: 8em; padding-bottom: 6em;">
+            <div class="container">
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01" class="textbox">Nome do animal:</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                            <div class="valid-feedback">
+                                Parece bom!
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom04" class="textbox">Data de resgate:</label>
+                            <input id="DT_RESGATE" type="date" class="form-control">
+                            <div class="valid-feedback">
+                                Parece bom!
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom04" class="textbox">Tipo:</label>
+                            <select class="form-control" id="validationCustom02" required>
+                                <option selected disabled value="">Escolha um tipo</option> 
+                                <option>Gato</option>
+                                <option>Cachorro</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom04" class="textbox">Sexo:</label>
+                            <select class="form-control" id="validationCustom03" required>
+                                <option selected disabled value="">Escolha o sexo do animal</option> 
+                                <option>Macho</option>
+                                <option>Fêmea</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01" class="textbox">Cor:</label>
+                            <input type="text" class="form-control" id="validationCustom04" required>
+                            <div class="valid-feedback">
+                                Parece bom!
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom04" class="textbox">Porte:</label>
+                            <select class="form-control" id="validationCustom05" required>
+                                <option selected disabled value="">Escolha o porte do animal</option> 
+                                <option>Pequeno</option>
+                                <option>Medio</option>
+                                <option>Grande</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="img" class="textbox">Escolha a imagem do animal</label>
+                            <input type="file" id="img" name="img" accept="image/*" class="imagem">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn1 btn1-outline-link mr-sm-1" type="submit">Cadastrar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row pt-120 pb-80">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <h6>Sobre nós</h6>
+                            <p>
+                                Somos uma equipe de pessoas que visam auxiliar os Pets da forma que pudermos. O nosso maior proposito quando vemos animais de rua é logo acolhe-lo e dar a ele uma casa para ser feliz. Nesse sentido, ser um meio para a conquista desse proposito é o que
+                                nos impulssiona para continuar seguindo nossa missão.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <h6>Links úteis</h6>
+                            <div class="row">
+                                <ul class="col footer-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Adote!</a></li>
+                                    <li><a href="#">Doe!</a></li>
+                                </ul>
+                                
+                                <ul class="col footer-nav">
+                                    <li><a href="https://www.facebook.com/4patinhasbrecho/?epa=SEARCH_BOX">Grupo Brechó 4 Patinhas</a></li>
+                                    <li><a href="https://www.facebook.com/oscipsempreaseulado/?epa=SEARCH_BOX">Grupo Sempre ao Seu Lado</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-md-6">
+                        <div class="single-footer-widget mail-chimp">
+                            <h6 class="mb-20">Nos contate!</h6>
+                            <ul class="list-contact">
+                                <li class="flex-row d-flex">
+                                    <div class="icon">
+                                        <span class="lnr lnr-home"></span>
+                                    </div>
+                                    <div class="detail">
+                                        <h4>Araras, São Paulo</h4>
+                                        <p>
+                                            Av. Dr. Maximiliano Baruto, 500 - Jardim Universitario, Araras - SP, 13607-339
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex-row d-flex">
+                                    <div class="icon">
+                                        <span class="lnr lnr-envelope"></span>
+                                    </div>
+                                    <div class="detail">
+                                        <h4>support@PyxisPet</h4>
+                                        <p>
+                                            Nos envie sua dúvida à qualquer hora
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- End footer Area -->	
+        
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>			
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+        <script src="js/easing.min.js"></script>			
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/superfish.min.js"></script>	
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>	
+        <script src="js/owl.carousel.min.js"></script>						
+        <script src="js/jquery.nice-select.min.js"></script>							
+        <script src="js/mail-script.js"></script>	
+        <script src="js/main.js"></script>	
+    </body>
+    </html>
