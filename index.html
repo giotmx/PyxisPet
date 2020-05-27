@@ -28,38 +28,40 @@
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>
-			  <header id="header" id="home">
-			    <div class="container main-menu">
-			    	<div class="row align-items-center justify-content-between d-flex">
-				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" width=100% height=100% alt="" title="" /></a>
-				      </div>
-				      <nav id="nav-menu-container">
-				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Página inicial</a></li>
-				          <li class="menu-has-children"><a href="">Encontre</a>
-				            <ul>
-				              <li><a href="dogs.html">Cachorro</a></li>	
-				              <li><a href="cats.html">Gato</a></li>
-				            </ul>
-				            <li class="menu-has-children"><a href="">Participe</a>
-				            <ul>
-				              <li><a href="volunteer.html">Seja voluntário</a></li>	
-				              <li><a href="elements.html">Tenho interesse em um pet</a></li>
-				            </ul>
-				          </li>	
-				          <li><a href="about.html">Sobre nós</a></li>			          					          
-				          <li><a href="contact.html">Contato</a></li>				          			              
-				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
-			    	</div>
-			    </div>
-			  </header><!-- #header -->
+			<!-- #header start -->
+			<header id="header" id="home">
+			<div class="container main-menu">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+					<a href="index.html"><img src="img/logo.png" width=100% height=100% alt="" title="" /></a>
+					</div>
+					<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index.html">Página inicial</a></li>
+						<li class="menu-has-children"><a href="">Encontre</a>
+						<ul>
+							<li><a href="dogs.html">Cachorro</a></li>	
+							<li><a href="cats.html">Gato</a></li>
+						</ul>
+						<li class="menu-has-children"><a href="">Participe</a>
+						<ul>
+							<li><a href="voluntario.html">Seja voluntário</a></li>	
+							<li><a href="adocao.html">Tenho interesse em um pet</a></li>
+						</ul>
+						</li>	
+						<li><a href="about.html">Sobre nós</a></li>			          					          
+						<li><a href="login.html" class="genric-btn primary-btn circle medium">Área de Acesso</a></li>				          			              
+					</ul>
+				</nav><!-- #nav-menu-container -->		    		
+				</div>
+			</div>
+			</header>
+			<!-- #header end-->
 
 			<!-- start banner Area -->
 			<section class="banner-area relative" id="home">
 				<div class="container">
-					<div class="overlay overlay-bg"></div>
+					<div class="overlay"></div>
 					<div class="row fullscreen d-flex align-items-center justify-content-start">
 															
 					</div>
@@ -69,7 +71,7 @@
 			<br><br><br><br>
 
 			<!-- Start image-carusel Area -->
-			<section class="image-carusel-area">
+			<section class="image-carusel-area" style="padding-top: 3em;">
 				<div class="container">
 					<div class="row">
 						<div class="active-image-carusel">
@@ -102,10 +104,7 @@
 							<h1>
 								Sobre Nós
 							</h1>
-							<h5>Nós nos unimos através de um trabalho da faculdade para ajudar nesta causa animal</h5>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-							</p>
+							<h5>Nos unimos através de um trabalho da faculdade para ajudar na causa do abandono de animais.</h5>
 							<a href="about.html" class="primary-btn text-uppercase">Saiba Mais</a>
 						</div>
 					</div>
@@ -125,12 +124,86 @@
 							<a href="#" class="primary-btn">Encontre um Pet</a>
 						</div>		
 						<div class="col-lg-3 callto-top-right">
-							<a href="#" class="primary-btn">Confira os termos</a>
+							<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="primary-btn">Confira os termos</a>
 						</div>					
 					</div>
 				</div>	
 			</section>
 			<!-- end callto-top Area -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content ">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Termos De Adoção</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-thumbs-up"></span>
+								<a href="#">
+									<h4>
+										Escolha o animal
+									</h4>
+								</a>
+								<p>
+									Você pode adotar cachorros ou gatos que estão disponiveis aqui em nosso site.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-license"></span>
+								<a href="#">
+									<h4>
+										Preencha o formulário
+									</h4>
+								</a>
+								<p>
+									Preencha o formulário de interesse com o ID do pet escolhido e aguarde nosso retorno.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-envelope"></span>
+								<a href="#">
+									<h4>
+										Email de Retorno
+									</h4>
+								</a>
+								<p>
+									Após análise do seu formulario, enviaremos um email para informar mais detalhes sobre a adoção e data de retirada.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-paw"></span>
+								<a href="#">
+									<h4>
+										Novo entregante da família
+									</h4>
+								</a>
+								<p>
+									Basta comparecer na data e hora combinada para assinar o contrato e retirar seu novo amigo.
+								</p>
+							</div>
+						</div>																		
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+			</div>
+			<!-- modal end -->
 
 			<!-- Start process Area -->
 			<section class="process-area section-gap">
@@ -159,7 +232,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6">
 							<div class="single-process">
-								<span class="lnr lnr-license"></span>
+								<span class="lnr lnr-file-empty"></span>
 								<a href="#">
 									<h4>
 										Preencha o formulário
@@ -172,27 +245,27 @@
 						</div>
 						<div class="col-lg-3 col-md-6">
 							<div class="single-process">
-								<span class="lnr lnr-user"></span>
+								<span class="lnr lnr-envelope"></span>
 								<a href="#">
 									<h4>
 										Email de Retorno
 									</h4>
 								</a>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+									Após a análise do seu formulario, enviaremos um email para informar mais detalhes e data de retirada.
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6">
 							<div class="single-process">
-								<span class="lnr lnr-magic-wand"></span>
+								<span class="lnr lnr-paw"></span>
 								<a href="#">
 									<h4>
 										Novo entregante da família
 									</h4>
 								</a>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+									Basta comparecer na data e hora combinada para assinar o contrato e retirar seu novo amigo.
 								</p>
 							</div>
 						</div>																		
@@ -211,7 +284,7 @@
 							Para participar preencha o formulário e entraremos em contato para completar o cadastro
 						</p>
 						<div class="buttons d-flex flex-row">
-							<a href="#" class="primary-btn text-uppercase">Registre-se Agora</a>
+							<a href="voluntario.html" class="primary-btn text-uppercase">Registre-se Agora</a>
 						</div>
 					</div>
 				</div>	
