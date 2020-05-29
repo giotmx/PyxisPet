@@ -14,10 +14,11 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Cadastro de animais</title>
-    
+    <title>Pyxis Pet - Cadastros</title>
+    <link rel="icon" href="img/favicon.ico">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-    <!--
+        <!--
         CSS
         ============================================= -->
         <link rel="stylesheet" href="css/linearicons.css">
@@ -31,34 +32,35 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="bodycadastros">
-        <header id="header" id="home" class="header-scrolled">
-            <div class="container main-menu">
-                <div class="row align-items-center justify-content-between d-flex">
-                    <div id="logo">
+          <!-- #header start -->
+			<header id="header" id="home">
+                <div class="container main-menu">
+                    <div class="row align-items-center justify-content-between d-flex">
+                        <div id="logo">
                         <a href="index.html"><img src="img/logo.png" width=100% height=100% alt="" title="" /></a>
-                    </div>
-                    <nav id="nav-menu-container">
+                        </div>
+                        <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li class="menu-active"><a href="index.html">Página inicial</a></li>
                             <li class="menu-has-children"><a href="">Encontre</a>
-                                <ul>
-                                    <li><a href="dogs.html">Cachorro</a></li>	
-                                    <li><a href="cats.html">Gato</a></li>
-                                </ul>
-                            </li>
+                            <ul>
+                                <li><a href="dogs.html">Cachorro</a></li>	
+                                <li><a href="cats.html">Gato</a></li>
+                            </ul>
                             <li class="menu-has-children"><a href="">Participe</a>
-                                <ul>
-                                    <li><a href="volunteer.html">Seja voluntário</a></li>	
-                                    <li><a href="elements.html">Tenho interesse em um pet</a></li>
-                                </ul>
+                            <ul>
+                                <li><a href="voluntario.html">Seja voluntário</a></li>	
+                                <li><a href="adocao.html">Tenho interesse em um pet</a></li>
+                            </ul>
                             </li>	
                             <li><a href="about.html">Sobre nós</a></li>			          					          
-                            <li><a href="contact.html">Contato</a></li>				          			              
+                            <li><a href="menu_cadastro.html">Cadastros</a></li>				          			              
                         </ul>
-                    </nav><!-- #nav-menu-container -->		    		
+                        </nav><!-- #nav-menu-container -->		    		
+                    </div>
                 </div>
-            </div>
-        </header>
+                </header>
+                <!-- #header end-->
         
         <section style="padding-top: 8em; padding-bottom: 6em;">
             <div class="container">
@@ -114,6 +116,13 @@
                             <label for="img" class="textbox">Escolha a imagem do animal</label>
                             <input type="file" id="img" name="img" accept="image/*" class="imagem">
                         </div>
+                        <div class="col-md-4 mb-3 d-flex justify-content-between">
+                            <label for="validationCustom01" class="textbox">Disponível: </label>
+                            <div class="primary-switch">
+                                <input type="checkbox" id="default-switch">
+                                <label for="default-switch"></label>
+                            </div>
+                        </div>
                         <div class="col-12">
                             <button class="btn1 btn1-outline-link mr-sm-1" type="submit">Cadastrar</button>
                         </div>
@@ -122,82 +131,82 @@
                 </form>
             </div>
         </section>
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row pt-120 pb-80">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-footer-widget">
-                            <h6>Sobre nós</h6>
-                            <p>
-                                Somos uma equipe de pessoas que visam auxiliar os Pets da forma que pudermos. O nosso maior proposito quando vemos animais de rua é logo acolhe-lo e dar a ele uma casa para ser feliz. Nesse sentido, ser um meio para a conquista desse proposito é o que
-                                nos impulssiona para continuar seguindo nossa missão.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-footer-widget">
-                            <h6>Links úteis</h6>
-                            <div class="row">
-                                <ul class="col footer-nav">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Adote!</a></li>
-                                    <li><a href="#">Doe!</a></li>
-                                </ul>
-                                
-                                <ul class="col footer-nav">
-                                    <li><a href="https://www.facebook.com/4patinhasbrecho/?epa=SEARCH_BOX">Grupo Brechó 4 Patinhas</a></li>
-                                    <li><a href="https://www.facebook.com/oscipsempreaseulado/?epa=SEARCH_BOX">Grupo Sempre ao Seu Lado</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4  col-md-6">
-                        <div class="single-footer-widget mail-chimp">
-                            <h6 class="mb-20">Nos contate!</h6>
-                            <ul class="list-contact">
-                                <li class="flex-row d-flex">
-                                    <div class="icon">
-                                        <span class="lnr lnr-home"></span>
-                                    </div>
-                                    <div class="detail">
-                                        <h4>Araras, São Paulo</h4>
-                                        <p>
-                                            Av. Dr. Maximiliano Baruto, 500 - Jardim Universitario, Araras - SP, 13607-339
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="flex-row d-flex">
-                                    <div class="icon">
-                                        <span class="lnr lnr-envelope"></span>
-                                    </div>
-                                    <div class="detail">
-                                        <h4>support@PyxisPet</h4>
-                                        <p>
-                                            Nos envie sua dúvida à qualquer hora
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+ <!-- start footer Area -->		
+ <footer class="footer-area">
+    <div class="container">
+        <div class="row pt-60 pb-60">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-footer-widget">
+                    <h6>Sobre Nós</h6>
+                    <p>
+                        Site feito para uso estudantil destinado ao trabalho final de semestre.
+                    </p>
                 </div>
             </div>
-        </footer>
-        
-        <!-- End footer Area -->	
-        
-        <script src="js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>			
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-        <script src="js/easing.min.js"></script>			
-        <script src="js/hoverIntent.js"></script>
-        <script src="js/superfish.min.js"></script>	
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>	
-        <script src="js/owl.carousel.min.js"></script>						
-        <script src="js/jquery.nice-select.min.js"></script>							
-        <script src="js/mail-script.js"></script>	
-        <script src="js/main.js"></script>	
-    </body>
-    </html>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-footer-widget">
+                    <h6>Links Uteis</h6>
+                    <div class="row">
+                        <ul class="col footer-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Sobre Nós</a></li>
+                            <li><a href="#">Case Study</a></li>
+                        </ul>
+                        <ul class="col footer-nav">
+                            <li><a href="#">Adote</a></li>
+                            <li><a href="#">Participe</a></li>
+                            <li><a href="#">Equipe</a></li>
+                        </ul>									
+                    </div>
+                </div>
+            </div>						
+            <div class="col-lg-4  col-md-6">
+                <div class="single-footer-widget mail-chimp">
+                    <h6 class="mb-20">Entre em Contato</h6>
+                    <ul class="list-contact">
+                        <li class="flex-row d-flex">
+                            <div class="icon">
+                                <span class="lnr lnr-home"></span>
+                            </div>
+                            <div class="detail">
+                                <h4>FHO | Fundação Hermínio Ometto</h4>
+                                <p>
+                                    Av. Dr. Maximiliano Baruto, 500
+                                    Jd. Universitário | Araras - SP
+                                </p>
+                            </div>	
+                        </li>
+                        <li class="flex-row d-flex">
+                            <div class="icon">
+                                <span class="lnr lnr-envelope"></span>
+                            </div>
+                            <div class="detail">
+                                <h4>help@pyxispet.com</h4>
+                                <p>
+                                    Estamos disponíveis para qualquer dúvida!
+                                </p>
+                            </div>	
+                        </li>																		
+                    </ul>
+                </div>
+            </div>						
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->	
+
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>			
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="js/easing.min.js"></script>			
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>	
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>	
+<script src="js/owl.carousel.min.js"></script>						
+<script src="js/jquery.nice-select.min.js"></script>							
+<script src="js/mail-script.js"></script>	
+<script src="js/main.js"></script>	
+</body>
+</html>
