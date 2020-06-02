@@ -87,28 +87,28 @@
 						</div>
 					</div>						
 					<div class="row justify-content-center">
-						<form class="col-lg-9">
+						<form class="col-lg-9" id="myForm" action="mail.php" method="POST">
 						  <div class="form-group">
 						    <label for="nome">Nome</label>
-						    <input type="text" class="form-control" placeholder="Nome">
+						    <input type="text" name="name" class="form-control" placeholder="Nome">
 						  </div>
 						  <div class="form-group">
 						    <label for="sobrenome">Sobrenome</label>
-						    <input type="text" class="form-control" placeholder="Sobrenome">
+						    <input type="text" name="lastname" class="form-control" placeholder="Sobrenome">
 						  </div>						  
 						  <div class="form-group">
 						    <label for="endereço">Endereço</label>
-						    <input type="text" class="form-control mb-20" placeholder="Endereço"> 
+						    <input type="text" name="adress" class="form-control mb-20" placeholder="Endereço"> 
 						  </div>						  
 						  <div class="form-row">
 							<div class="col-6 mb-30">
 								<label for="Cidade">Cidade</label>
-								<input type="text" class="form-control" placeholder="Cidade">
+								<input type="text" name="city" class="form-control" placeholder="Cidade">
 							  </div>						  	
 								  <div class="col-6 mb-30">
 									  <label for="state">Estado</label>
 									   <div class="select-option" id="service-select">
-										<select>
+										<select name="state">
 											<option data-display="Selecione seu Estado">Selecione seu Estado</option>
 											<option value="1">Acre</option>
 											<option value="2">Alagoas</option>
@@ -142,16 +142,16 @@
 								  </div>						  	
 								  <div class="col-6 mb-30">
 									  <label for="email">Email</label>
-									   <input type="email" class="form-control" placeholder="Email">
+									   <input type="email" name="email" class="form-control" placeholder="Email">
 								  </div>
 								  <div class="col-6 mb-30">
 									  <label for="phone">Telefone</label>
-									   <input type="phone" class="form-control" placeholder="Telefone">						  		
+									   <input type="phone" name="phone" class="form-control" placeholder="Telefone">						  		
 								  </div>
 						  </div>		
 						  <div class="form-group">
 						    <label for="note">Conte Sobre Você</label>
-						    <textarea class="form-control" id="textarea" rows="5" placeholder="Escreva sobre suas habilidades e formação acadêmica"></textarea>
+						    <textarea class="form-control" name="message" id="textarea" rows="5" placeholder="Escreva sobre suas habilidades e formação acadêmica"></textarea>
 						  </div>						  
 						  <button type="submit" class="primary-btn float-right">Enviar</button>
 						</form>
